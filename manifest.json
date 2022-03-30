@@ -1,0 +1,17 @@
+{
+  "name": "Free Dolphin",
+  "description": "Remove paid article from ledauphine",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+   "default_icon": "dolphin.png"
+  },
+  "content_scripts": [
+	{
+	  "matches": [
+	    "https://www.ledauphine.com/*"
+	  ],
+	  "js": ["script.js"]
+	}
+  ]
+}
